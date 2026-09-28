@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <h3>CONTATTI</h3>
             <p><img src = "svg/telephone-pieno.svg" alt = "numero telefonico">+39 0733 238262</p>
             <p><img src = "svg/whatsapp.svg" alt = "numero whatsapp">+39 346 478 5294</p>
-            <p><img src = "svg/email-pieno.svg" alt = "indirizzo mail">postabaccheria@gmail.com</p>
-            <p><img src = "svg/maps-pieno.svg" alt = "indirizzo">Piazzale Vittime del Terrorismo, 3, 62100 Macerata MC, Italy</p>
+            <p><img src = "svg/email-pieno.svg" alt = "indirizzo mail">posta@tabaccheriagirasole.com</p>
+            <p><img src = "svg/maps-pieno.svg" alt = "indirizzo">Piazzale Vittime del Terrorismo, 3, 62100 Macerata</p>
         </section>
         <section>
             <h3>INFORMAZIONI UTILI</h3>
