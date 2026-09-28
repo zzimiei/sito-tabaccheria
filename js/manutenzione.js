@@ -52,8 +52,8 @@ function menu() {
     div.className = "menu";
     div.innerHTML = `
         <a href="manutenzione.html">SERVIZI</a>
+		<a href="manutenzione.html">DISTRIBUTORI</a>
         <a href="manutenzione.html">CATALOGO</a>
-        <a href="manutenzione.html">CHI SIAMO</a>
         <a href="manutenzione.html">CONTATTI</a>
     `;
 
