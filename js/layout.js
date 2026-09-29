@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
         <a href = "index.html"><img src = "svg/pittogramma + logotipo - orizzontale.svg" alt = "index"></a>
         <button onclick = "menu()"></button>
 		<nav>
-            <a href = "servizi.html">SERVIZI</a>
-            <a href = "distributori.html">DISTRIBUTORI</a>
-        	<a href = "catalogo.html">CATALOGO</a>
-            <a href = "contatti.html">CONTATTI</a>
+            <a href = "manutenzione.html">SERVIZI</a>
+            <a href = "manutenzione.html">DISTRIBUTORI</a>
+        	<a href = "manutenzione.html">CATALOGO</a>
+            <a href = "manutenzione.html">CONTATTI</a>
         </nav>
     `;
 
@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
         </section>
         <section>
             <h3>INFORMAZIONI UTILI</h3>
-            <a href = "faq.html"><img src = "svg/question-pieno.svg" alt = "domande frequenti" class = "piugrande">DOMANDE FREQUENTI</a>
+            <a href = "manutenzione.html"><img src = "svg/question-pieno.svg" alt = "domande frequenti" class = "piugrande">DOMANDE FREQUENTI</a>
             <p onclick = "orari()"><img src = "svg/clock-pieno.svg" alt = "orari di apertura">Lunedì - Sabato: 6:30 - 13:00 | 15:30 - 19:30</p>
-            <a href = "chisiamo.html"><img src = "svg/aboutus.svg" alt = "chi siamo" class = "piugrande">Chi Siamo</a>
+            <a href = "manutenzione.html"><img src = "svg/aboutus.svg" alt = "chi siamo" class = "piugrande">Chi Siamo</a>
         </section>
         <hr>
         <i>© 2026 - ${new Date().getFullYear()} &nbsp;&nbsp; Tabaccheria Girasole - All Rights Reserved.</i>
