@@ -120,7 +120,7 @@ main section a:nth-of-type(2):hover img {
 @media screen and (max-width: 768px) {
     
     main {
-        padding-top: 2em;
+        padding-top: 1.5em;
     }
 
     main h1 {
