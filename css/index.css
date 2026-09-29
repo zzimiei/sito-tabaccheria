@@ -131,10 +131,16 @@ main section a:nth-of-type(2):hover img {
         font-size: 1.7em;
     }
 
+    main p {
+        line-height: 1.4em;
+    }
+
     main section {
         flex-wrap: wrap;
         justify-content: center;
         width: 75%;
+        margin-top: 0px;
+        row-gap: 1em;
     }
     
     main section a {
