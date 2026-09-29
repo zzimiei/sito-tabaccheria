@@ -118,6 +118,19 @@ main section a:nth-of-type(2):hover img {
 }
 
 @media screen and (max-width: 768px) {
+    
+    main {
+        padding-top: 2em;
+    }
+
+    main h1 {
+        font-size: 1.8em;
+    }
+
+    main h3 {
+        font-size: 1.7em;
+    }
+
     main section {
         flex-wrap: wrap;
         justify-content: center;
