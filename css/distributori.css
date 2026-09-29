@@ -1,0 +1,92 @@
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    height: auto;
+    background-image: radial-gradient(circle at left top, #42c9ff, rgba(14, 68, 87, 0.7)), url("../svg/pittogramma.svg"), linear-gradient(black, black);
+    background-size: cover, 400%;
+    background-position: 30% 30%;
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4), 2px 0px 70px rgba(0, 0, 0, 0.7);
+    padding: 150px 10% 50px 10%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+main h2 {
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    text-align: justify;
+    max-width: 50em;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(0deg, #555555, #8f8f8f);
+    border-radius: 5px;
+    padding: 10px 30px;
+    width: 350px;
+    max-height: 65px;
+    height: fit-content;
+    overflow: hidden;
+    transition: 0.3s linear;
+    box-shadow: 0px 10px 10px #0000004f, 0px 5px 5px #0000004f;
+}
+
+main section button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    font: 700 18px'Poppins';
+    background-color: #40d1f1;
+    border: none;
+    box-shadow: 0px 3px 5px #000000a0; 
+    pointer-events: all;
+    color: rgb(5, 5, 10);
+    text-shadow: 0px 0px 5px #0000004f;
+    transition: 0.1s ease-in-out;
+}
+
+main section button:hover {
+    background-color: #1d9acc;
+    color: whitesmoke;
+    transition: 0.1s ease-in-out;
+}
+
+main section div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    width: 100%;
+    background-image: linear-gradient(0deg, #2c2c2c, #161616);
+    box-shadow: inset 0px 0px 10px red, 0px 0px 5px red;
+    border: rgba(245, 245, 245, 0.5) 1px solid;
+    border-radius: 5px;
+    padding: 15px;
+    animation: led 8s linear infinite alternate;
+}
+
+@keyframes led {
+    0% {
+        box-shadow: inset 0px 0px 15px red, 0px 0px 5px red;
+    }
+    25% {
+        box-shadow: inset 0px 0px 15px lime, 0px 0px 5px lime;
+    }
+    50% {
+        box-shadow: inset 0px 0px 15px yellow, 0px 0px 5px yellow;
+    }
+    75% {
+        box-shadow: inset 0px 0px 15px magenta, 0px 0px 5px magenta;
+    }
+    100% {
+        box-shadow: inset 0px 0px 15px cyan, 0px 0px 5px cyan;
+    }
+}
+
+main section div img {
+    width: 65px;
+}

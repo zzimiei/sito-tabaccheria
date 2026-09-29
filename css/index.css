@@ -24,7 +24,7 @@ main img {
 
 main section {
     pointer-events: all;
-    margin-top: 3em;
+    margin-top: 1.5em;
     display: flex;
     flex-direction: row;
     width: fit-content;
@@ -41,6 +41,36 @@ main section a {
     transition: 0.1s linear;
 }
 
+main h1, main h2, main h3, main p {
+    text-shadow: 0px 0px 10px black;
+}
+
+main h1 {
+    font-size: 3em;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #40d1f1;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+main h2 {
+    color: #4cbbd4;
+}
+
+main h3 {
+    line-height: 0.8em;
+    color: #a5eaff;
+}
+
+main p {
+    max-width: 40em;
+    padding-left: 3em;
+    padding-right: 3em;
+    color: #ecfbff;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
 main section a:first-of-type {
     background-color: #40d1f1;
 }
@@ -52,34 +82,14 @@ main section a:nth-of-type(2) {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-main section a:nth-of-type(3) {
-    border: whitesmoke solid 3px;
-    color: whitesmoke;
-    background-color: #ff2222;
-    animation: offertespeciali 1.5s ease-in-out infinite alternate;
-    box-shadow: 0px 0px 30px #ff2222;
-}
-
-@keyframes offertespeciali {
-    from {
-        border-color: whitesmoke;
-        color: whitesmoke;
-        background-color: #ff2222;
-    } to {
-        border-color: #ff2222;
-        color: #ff2222;
-        background-color: whitesmoke;
-    }
-}
-
 main section a:first-of-type img {
     width: 2em;
     height: 2em;
 }
 
 main section a:nth-of-type(2) img {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.3em;
+    height: 1.3em;
     margin-left: 0.5em;
     filter: brightness(0) saturate(90%) invert(70%) sepia(58%) saturate(1000%) hue-rotate(151deg) brightness(80%) drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
 }
