@@ -1,16 +1,38 @@
-main {
-    position: relative;
-    background-image: url("../jpg/index_background.png");
-    background-size: cover;
-    background-position: center;
+body > address {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    gap: 10px;
+    z-index: 4;
+    right: 1em;
+    bottom: 1em;
 }
 
-main::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent 25%, rgba(0, 0, 0, 0.8));
-    z-index: 0;
+body > address a {
+    pointer-events: all;
+    width: 70px;
+}
+
+body > address a img {
+    width: 100%;
+    filter: contrast(0) brightness(2) drop-shadow(0px 0px 5px #000000b0);
+}
+
+body > address a:first-of-type img {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(35%) saturate(926%) hue-rotate(88deg) brightness(92%) contrast(93%) drop-shadow(0px 0px 5px #000000b0);
+}
+
+body > address a:hover img {
+    filter: brightness(0) saturate(100%) invert(70%) sepia(29%) saturate(1081%) hue-rotate(153deg) brightness(102%) contrast(89%);
+}
+
+
+main {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), transparent 15%, rgba(0, 0, 0, 0.4)), url("../webp/foto/esterno.webp");
+    background-size: cover;
+    background-position: center;
 }
 
 main > * {
@@ -19,10 +41,12 @@ main > * {
 }
 
 main img {
-    filter: drop-shadow(0px 0px 150px rgba(0, 0, 0, 0.7));
+    width: 45%;
+    max-width: 350px;
+    filter: drop-shadow(0px 0px 45px rgba(0, 0, 0, 0.2)) drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
 }
 
-main section {
+main div {
     pointer-events: all;
     margin-top: 1.5em;
     display: flex;
@@ -31,7 +55,7 @@ main section {
     gap: 2em;
 }
 
-main section a {
+main div a, section:last-of-type a{
     display: inline-flex;
     align-items: center;
     padding: 0.3em 0.75em 0.3em 0.75em;
@@ -42,7 +66,7 @@ main section a {
 }
 
 main h1, main h2, main h3, main p {
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 50px rgba(0, 0, 0, 1), 0px 0px 20px rgba(0, 0, 0, 1), 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
 main h1 {
@@ -50,7 +74,6 @@ main h1 {
     font-family: 'Poppins';
     font-weight: 700;
     color: #40d1f1;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 main h2 {
@@ -71,56 +94,122 @@ main p {
     font-size: 1.2em;
 }
 
-main section a:first-of-type {
+main div a:first-of-type, section:last-of-type a {
     background-color: #40d1f1;
 }
 
-main section a:nth-of-type(2) {
+section:last-of-type a {
+    font-size: 1.2em;
+}
+
+main div a:nth-of-type(2) {
     border: #23B7D9 solid 3px;
     background-color: transparent;
     color: #23B7D9;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-main section a:first-of-type img {
+main div a:first-of-type img, section:last-of-type a img {
     width: 2em;
     height: 2em;
 }
 
-main section a:nth-of-type(2) img {
+main div a:nth-of-type(2) img {
     width: 1.3em;
     height: 1.3em;
     margin-left: 0.5em;
     filter: brightness(0) saturate(90%) invert(70%) sepia(58%) saturate(1000%) hue-rotate(151deg) brightness(80%) drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
 }
 
-main section a:hover {
+main div a:hover, section:last-of-type a:hover {
     box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.7);
     transition: 0.1s linear;
 }
 
-main section a:first-of-type:hover {  
+main div a:first-of-type:hover, section:last-of-type a:hover {  
     background-color: #1d9acc;
     color: whitesmoke;
 }
 
-main section a:first-of-type:hover img {
+main div a:first-of-type:hover img, section:last-of-type a:hover img {
     filter: brightness(0) saturate(100%) invert(74%) sepia(77%) saturate(1%) hue-rotate(47deg) brightness(110%) contrast(95%);
 }
 
-main section a:nth-of-type(2):hover {
+main div a:nth-of-type(2):hover {
     color: whitesmoke;
     border-color: whitesmoke;
 }
 
-main section a:nth-of-type(2):hover img {
+main div a:nth-of-type(2):hover img {
     filter: brightness(0) saturate(100%) invert(74%) sepia(77%) saturate(1%) hue-rotate(47deg) brightness(110%) contrast(95%);
 }
 
+
+.background_sections {
+    background-image: radial-gradient(circle at left top, #2aa9db 10%, rgba(14, 68, 87, 0) 75%), url("../webp/foto/interno2.webp");
+    background-size: cover, 100%;
+    background-position: 25% 30%;
+}
+
+section {
+    padding: 2em;
+    padding-left: 6em;
+    pointer-events: all;
+}
+
+section h2 {
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6), 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+section h2, section p, section:first-of-type a {
+    color: whitesmoke;
+}
+
+section:last-of-type a {
+    text-shadow: none;
+}
+
+section p {
+    font-size: 1.2em;
+    max-width: 40em;
+    text-align: justify;
+    margin-bottom: 2em;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1), 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+section span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    pointer-events: none;
+}
+
+section span img {
+    width: 100px;
+    filter: drop-shadow(0px 3px 3px #0000009c) drop-shadow(0px 5px 10px #00000036);
+}
+
+section a {
+    font-weight: 500;
+}
+
+section:first-of-type a {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
-    
+
     main {
-        padding-top: 1em;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent 15%, rgba(0, 0, 0, 0.5)), url("../webp/foto/esterno verticale.webp");
+    }
+
+    body > address {
+        right: 10px;
+    }
+
+    body > address a {
+        width: 40px;
     }
 
     main h1 {
@@ -132,10 +221,11 @@ main section a:nth-of-type(2):hover img {
     }
 
     main p {
-        line-height: 1.4em;
+        line-height: 1.3em;
+        font-size: 0.9em;
     }
 
-    main section {
+    main div {
         flex-wrap: wrap;
         justify-content: center;
         width: 75%;
@@ -143,9 +233,24 @@ main section a:nth-of-type(2):hover img {
         row-gap: 1em;
     }
     
-    main section a {
+    main div a {
         width: 100%;
         justify-content: center;
         font-size: 1.5em;
+    }
+
+    .background_sections {
+        background-image: radial-gradient(circle at left top, #2aa9dbd8 25%, rgba(14, 68, 87, 0.5)), url("../webp/foto/interno2 verticale.webp");
+        background-size: cover, 300%;
+    }
+
+    section {
+        padding: 2em 4em 2em 4em;
+        text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4), 2px 0px 10px rgba(0, 0, 0, 0.8);
+        align-content: center;
+    }
+
+    section:last-of-type a {
+        margin-bottom: 1em;
     }
 }

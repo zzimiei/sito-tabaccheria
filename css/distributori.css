@@ -3,13 +3,14 @@ main {
     flex-direction: column;
     row-gap: 1em;
     height: auto;
-    background-image: radial-gradient(circle at left top, #42c9ff, rgba(14, 68, 87, 0.7)), url("../svg/pittogramma.svg"), linear-gradient(black, black);
-    background-size: cover, 400%;
-    background-position: 30% 30%;
-    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4), 2px 0px 70px rgba(0, 0, 0, 0.7);
-    padding: 150px 10% 50px 10%;
+    background-image: linear-gradient(#00000050, transparent 25%, #000000a0), url("../webp/foto/distributori.webp");
+    background-size: 100% auto; /*da risolvere*/
+    background-repeat: repeat-y;
+    background-color: #000;
+    padding: 100px 10% 50px 10%;
     align-items: center;
     justify-content: flex-start;
+    
 }
 
 main h2 {
@@ -18,13 +19,14 @@ main h2 {
     margin-bottom: 2em;
     text-align: justify;
     max-width: 50em;
+    text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.7), 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
 
 main section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(0deg, #555555, #8f8f8f);
+    background-image: linear-gradient(0deg, #505050, #c9c9c9);
     border-radius: 5px;
     padding: 10px 30px;
     width: 350px;
@@ -59,9 +61,9 @@ main section button:hover {
 main section div {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 2px;
     width: 100%;
-    background-image: linear-gradient(0deg, #2c2c2c, #161616);
+    background-color: #202020;
     box-shadow: inset 0px 0px 10px red, 0px 0px 5px red;
     border: rgba(245, 245, 245, 0.5) 1px solid;
     border-radius: 5px;
@@ -71,22 +73,30 @@ main section div {
 
 @keyframes led {
     0% {
-        box-shadow: inset 0px 0px 15px red, 0px 0px 5px red;
+        box-shadow: inset 0px 0px 25px red, 0px 0px 5px red;
     }
     25% {
-        box-shadow: inset 0px 0px 15px lime, 0px 0px 5px lime;
+        box-shadow: inset 0px 0px 25px lime, 0px 0px 5px lime;
     }
     50% {
-        box-shadow: inset 0px 0px 15px yellow, 0px 0px 5px yellow;
+        box-shadow: inset 0px 0px 25px yellow, 0px 0px 5px yellow;
     }
     75% {
-        box-shadow: inset 0px 0px 15px magenta, 0px 0px 5px magenta;
+        box-shadow: inset 0px 0px 25px magenta, 0px 0px 5px magenta;
     }
     100% {
-        box-shadow: inset 0px 0px 15px cyan, 0px 0px 5px cyan;
+        box-shadow: inset 0px 0px 25px cyan, 0px 0px 5px cyan;
     }
 }
 
 main section div img {
-    width: 65px;
+    width: 48px;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        background-image: linear-gradient(#00000050, transparent 25%, #000000a0), url("../webp/foto/distributori verticale.webp");
+        background-size: cover;
+    }
 }

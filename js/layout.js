@@ -7,28 +7,35 @@ document.addEventListener("DOMContentLoaded", function () {
 		<nav>
             <a href = "manutenzione.html">SERVIZI</a>
             <a href = "manutenzione.html">DISTRIBUTORI</a>
-        	<a href = "manutenzione.html">CATALOGO</a>
+            <a href = "manutenzione.html">CATALOGO</a>
             <a href = "manutenzione.html">CONTATTI</a>
         </nav>
     `;
 
     const footer = document.createElement("footer");
     footer.innerHTML = `
-        <section>
+        <address>
             <h3>CONTATTI</h3>
             <a href = "tel:+390733238262"><img src = "svg/telephone-pieno.svg" alt = "numero telefonico">+39 0733 238262</a>
             <a href = "https://wa.me/+393464785294"><img src = "svg/whatsapp.svg" alt = "numero whatsapp">+39 346 478 5294</a>
             <a href = "mailto:posta@tabaccheriagirasole.com"><img src = "svg/email-pieno.svg" alt = "indirizzo mail">posta@tabaccheriagirasole.com</a>
-            <a href = "https://maps.app.goo.gl/5ZdesHNdWVWNLTRT9"><img src = "svg/maps-pieno.svg" alt = "indirizzo">Piazzale Vittime del Terrorismo, 3, 62100 Macerata MC, Italy</a>
-        </section>
-        <section>
+            <a href = "https://maps.app.goo.gl/5ZdesHNdWVWNLTRT9"><img src = "svg/maps-pieno.svg" alt = "indirizzo">Piazzale Vittime del Terrorismo, 3, Macerata</a>
+        </address>
+        <div>
             <h3>INFORMAZIONI UTILI</h3>
             <a href = "manutenzione.html"><img src = "svg/question-pieno.svg" alt = "domande frequenti" class = "piugrande">DOMANDE FREQUENTI</a>
-            <p onclick = "orari()"><img src = "svg/clock-pieno.svg" alt = "orari di apertura">Lunedì - Sabato: 6:30 - 13:00 | 15:30 - 19:30</p>
+            <p><img src = "svg/clock-pieno.svg" alt = "orari di apertura">Lunedì - Sabato: 6:30 - 13:00 | 15:30 - 19:30</p>
             <a href = "manutenzione.html"><img src = "svg/aboutus.svg" alt = "chi siamo" class = "piugrande">Chi Siamo</a>
-        </section>
+            <br>
+        </div>
         <hr>
-        <i>© 2026 - ${new Date().getFullYear()} &nbsp;&nbsp; Tabaccheria Girasole - All Rights Reserved.</i>
+        <div>
+            <i>© 2026 - ${new Date().getFullYear()} &nbsp;&nbsp; Tabaccheria Girasole - All Rights Reserved.</i>
+            <div>
+                <a href = "https://www.instagram.com/tabaccheria_girasole"><img src = "svg/instagram.svg" alt = "instagram" class = "piugrande"></a>
+                <a href = "https://www.facebook.com/tabaccheriagirasole"><img src = "svg/facebook.svg" alt = "facebook" class = "piugrande"></a>
+            </div>
+        </div>
     `;
 
     document.body.insertBefore(header, document.body.firstElementChild);
@@ -51,10 +58,10 @@ function menu() {
     const div = document.createElement("div");
     div.className = "menu";
     div.innerHTML = `
-        <a href="servizi.html">SERVIZI</a>
-        <a href="distributori.html">DISTRIBUTORI</a>
-        <a href="catalogo.html">CATALOGO</a>
-        <a href="contatti.html">CONTATTI</a>
+        <a href="manutenzione.html">SERVIZI</a>
+        <a href="manutenzione.html">DISTRIBUTORI</a>
+        <a href="manutenzione.html">CATALOGO</a>
+        <a href="manutenzione.html">CONTATTI</a>
     `;
 
     document.body.insertBefore(div, document.body.firstElementChild);

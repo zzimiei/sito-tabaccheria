@@ -1,7 +1,11 @@
-main {
+main, main address {
     display: flex;
     flex-direction: column;
     row-gap: 1em;
+}
+
+
+main {
     height: auto;
     background-image: radial-gradient(circle at left top, #42c9ff, rgba(14, 68, 87, 0.7)), url("../svg/pittogramma.svg"), linear-gradient(black, black);
     background-size: cover, 400%;
@@ -10,6 +14,10 @@ main {
     padding-left: 10%;
     padding-right: 10%;
     align-items: flex-start;
+}
+
+main address {
+    font-style: normal;
 }
 
 main h1, main h2, main p, main a, main ul, main li {
