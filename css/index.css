@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Sportscenter";
+    src: url("../fonts/Sportscenter.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url("../fonts/FuturaCyrillicBook.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
 body > address {
     display: flex;
     flex-direction: column;
@@ -27,10 +41,9 @@ body > address a:hover img {
     filter: brightness(0) saturate(100%) invert(70%) sepia(29%) saturate(1081%) hue-rotate(153deg) brightness(102%) contrast(89%);
 }
 
-
 main {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), transparent 15%, rgba(0, 0, 0, 0.4)), url("../webp/foto/esterno.webp");
+    background-image: linear-gradient(rgba(11, 31, 58, 0.2), rgba(3, 33, 51, 0.2) 15%, rgba(3, 7, 10, 0.75)), url("../webp/foto/esterno.webp");
     background-size: cover;
     background-position: center;
 }
@@ -41,9 +54,9 @@ main > * {
 }
 
 main img {
-    width: 45%;
-    max-width: 350px;
-    filter: drop-shadow(0px 0px 45px rgba(0, 0, 0, 0.2)) drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
+    width: 35%;
+    max-width: 324px;
+    filter: drop-shadow(0px -50px 35px rgba(0, 0, 0, 0.2)) drop-shadow(0px 40px 50px rgba(0, 0, 0, 0.3));
 }
 
 main div {
@@ -69,33 +82,86 @@ main h1, main h2, main h3, main p {
     text-shadow: 0px 0px 50px rgba(0, 0, 0, 1), 0px 0px 20px rgba(0, 0, 0, 1), 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
+
 main h1 {
     font-size: 3em;
     font-family: 'Poppins';
     font-weight: 700;
-    color: #40d1f1;
+    color: #23c1ff;
 }
 
 main h2 {
-    color: #4cbbd4;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: #55c2ec;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1), 0px 0px 20px rgba(0, 0, 0, 1), 0px 0px 10px rgba(0, 0, 0, 1);
 }
 
 main h3 {
-    line-height: 0.8em;
-    color: #a5eaff;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: normal;
+    font-weight: 500;
+    padding: 0.4em 3.5em;
+    color: whitesmoke;
+    background-image: linear-gradient( 90deg, transparent, #21aee6 35%, #21aee6 65%, transparent);
+}
+
+main h3 img {
+    width: 1.8em;
+    margin-right: 0.2em;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
+}
+
+main h3 div {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    gap: 0px;
+    line-height: 1em;
+    font-family: 'Sportscenter';
+    font-size: 0.9em;
+}
+
+main h3 span {
+    text-align: right;
+    font-family: 'Futura';
+    font-size: 0.6em;
 }
 
 main p {
     max-width: 40em;
-    padding-left: 3em;
-    padding-right: 3em;
-    color: #ecfbff;
-    text-align: justify;
-    font-size: 1.2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    color: #cddadf;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+main .freccia {
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+    width: 100px;
+    filter: contrast(0) brightness(1.8);
+    transform: rotate(90deg);
+    pointer-events: all;
+}
+
+main .freccia img {
+    width: 100%;
+    pointer-events: none;
+    filter: none;
+    animation: freccia 1s ease-in-out infinite alternate;
+}
+
+@keyframes freccia {
+    from {translate: 0.5em;} to {translate: 0em;}
 }
 
 main div a:first-of-type, section:last-of-type a {
-    background-color: #40d1f1;
+    background-color: #25ccf1;
 }
 
 section:last-of-type a {
@@ -103,9 +169,9 @@ section:last-of-type a {
 }
 
 main div a:nth-of-type(2) {
-    border: #23B7D9 solid 3px;
+    border: #24c1e4 solid 3px;
     background-color: transparent;
-    color: #23B7D9;
+    color: #24c1e4;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -146,15 +212,19 @@ main div a:nth-of-type(2):hover img {
 
 
 .background_sections {
-    background-image: radial-gradient(circle at left top, #2aa9db 10%, rgba(14, 68, 87, 0) 75%), url("../webp/foto/interno2.webp");
+    background-image: radial-gradient(circle at left top, #56c9f7,#1ca5dbc5 10%, #1fb2ec27), linear-gradient(transparent, rgba(0, 0, 0, 0.9)), url("../webp/foto/interno2.webp");
     background-size: cover, 100%;
     background-position: 25% 30%;
 }
 
 section {
-    padding: 2em;
+    padding: 4em;
     padding-left: 6em;
     pointer-events: all;
+}
+
+section:last-of-type {
+    padding-top: 0em;
 }
 
 section h2 {
@@ -174,6 +244,7 @@ section p {
     max-width: 40em;
     text-align: justify;
     margin-bottom: 2em;
+    line-height: 1.4em;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 1), 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -197,11 +268,17 @@ section a {
 section:first-of-type a {
     text-decoration: underline;
 }
+section:last-of-type a {
+    letter-spacing: 0.1em;
+    background-color: #23c1ff;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+    font-size: 1.3em;
+}
 
 @media screen and (max-width: 768px) {
 
     main {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent 15%, rgba(0, 0, 0, 0.5)), url("../webp/foto/esterno verticale.webp");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0.8) 70%), url("../webp/foto/esterno verticale.webp");
     }
 
     body > address {
@@ -214,15 +291,30 @@ section:first-of-type a {
 
     main h1 {
         font-size: 1.8em;
+        text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.6), 0px 0px 30px rgba(0, 0, 0, 0.9), 0px 0px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    main h2 {
+        font-size: 1.4em;
+        text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9), 0px 0px 30px rgba(0, 0, 0, 0.8), 0px 0px 15px rgba(0, 0, 0, 1);
     }
 
     main h3 {
-        font-size: 1.7em;
+        font-size: 1.5em;
+    }
+
+    main h3 div {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        width: min-content;
     }
 
     main p {
         line-height: 1.3em;
-        font-size: 0.9em;
+        font-size: 1em;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     main div {
@@ -232,25 +324,59 @@ section:first-of-type a {
         margin-top: 0px;
         row-gap: 1em;
     }
-    
+
     main div a {
         width: 100%;
         justify-content: center;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .background_sections {
-        background-image: radial-gradient(circle at left top, #2aa9dbd8 25%, rgba(14, 68, 87, 0.5)), url("../webp/foto/interno2 verticale.webp");
+        background-image: radial-gradient(circle at left top, #1f8cb8d8 25%, rgba(5, 26, 34, 0.7)), url("../webp/foto/interno2 verticale.webp");
         background-size: cover, 300%;
     }
 
+    main .freccia {
+        width: 50px;
+        left: 50%;
+        translate: -50%;
+    }
+
     section {
-        padding: 2em 4em 2em 4em;
-        text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4), 2px 0px 10px rgba(0, 0, 0, 0.8);
-        align-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items:  center;
+        padding: 4em 2.5em 4em 2.5em;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6), 2px 0px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    section h2 {
+        width: 100%;
+        text-align: left;
+    }
+    
+    section p {
+        font-size: 1.1em;
+    }
+
+    section span {
+        justify-content: center;
+    }
+
+    section span img {
+        width: 80px;
+    }
+
+    section:last-of-type p {
+        font-size: 1.2em;
     }
 
     section:last-of-type a {
-        margin-bottom: 1em;
+        font-size: 1.3em;
+        letter-spacing: normal;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 }
