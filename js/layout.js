@@ -58,10 +58,10 @@ function menu() {
     const div = document.createElement("div");
     div.className = "menu";
     div.innerHTML = `
-        <a href="servizi.html">SERVIZI</a>
-        <a href="distributori.html">DISTRIBUTORI</a>
-        <a href="catalogo.html">CATALOGO</a>
-        <a href="contatti.html">CONTATTI</a>
+        <a href="manutenzione.html">SERVIZI</a>
+        <a href="manutenzione.html">DISTRIBUTORI</a>
+        <a href="manutenzione.html">CATALOGO</a>
+        <a href="manutenzione.html">CONTATTI</a>
     `;
 
     document.body.insertBefore(div, document.body.firstElementChild);
