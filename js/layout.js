@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const header = document.createElement("header");
     header.innerHTML = `
-        <a href = "index.html"><img src = "svg/pittogramma + logotipo - orizzontale.svg" alt = "index"></a>
+        <a href = "index.html"><img src = "svg/pittogramma + logotipo - orizzontale.svg" alt = "Index Tabaccheria Girasole"></a>
         <button onclick = "menu()"></button>
 		<nav>
-            <a href = "manutenzione.html">SERVIZI</a>
-            <a href = "manutenzione.html">DISTRIBUTORI</a>
-            <a href = "manutenzione.html">CATALOGO</a>
-            <a href = "manutenzione.html">CONTATTI</a>
+            <a href = "servizi.html">SERVIZI</a>
+            <a href = "distributori.html">DISTRIBUTORI</a>
+        	<a href = "catalogo.html">CATALOGO</a>
+            <a href = "contatti.html">CONTATTI</a>
         </nav>
     `;
 
@@ -16,24 +16,24 @@ document.addEventListener("DOMContentLoaded", function () {
     footer.innerHTML = `
         <address>
             <h3>CONTATTI</h3>
-            <a href = "tel:+390733238262"><img src = "svg/telephone-pieno.svg" alt = "numero telefonico">+39 0733 238262</a>
-            <a href = "https://wa.me/+393464785294"><img src = "svg/whatsapp.svg" alt = "numero whatsapp">+39 346 478 5294</a>
-            <a href = "mailto:posta@tabaccheriagirasole.com"><img src = "svg/email-pieno.svg" alt = "indirizzo mail">posta@tabaccheriagirasole.com</a>
-            <a href = "https://maps.app.goo.gl/5ZdesHNdWVWNLTRT9"><img src = "svg/maps-pieno.svg" alt = "indirizzo">Piazzale Vittime del Terrorismo, 3, Macerata</a>
+            <a href = "tel:+390733238262"><img src = "svg/telephone-pieno.svg" alt = "Telefono">+39 0733 238262</a>
+            <a href = "https://wa.me/+393464785294"><img src = "svg/whatsapp.svg" alt = "Contatto Whatsapp">+39 346 478 5294</a>
+            <a href = "mailto:posta@tabaccheriagirasole.com"><img src = "svg/email-pieno.svg" alt = "Indirizzo Mail">posta@tabaccheriagirasole.com</a>
+            <a href = "https://maps.app.goo.gl/5ZdesHNdWVWNLTRT9"><img src = "svg/maps-pieno.svg" alt = "Indirizzo">Piazzale Vittime del Terrorismo, 3, Macerata</a>
         </address>
         <div>
             <h3>INFORMAZIONI UTILI</h3>
-            <a href = "manutenzione.html"><img src = "svg/question-pieno.svg" alt = "domande frequenti" class = "piugrande">DOMANDE FREQUENTI</a>
+            <a href = "faq.html"><img src = "svg/question-pieno.svg" alt = "domande frequenti" class = "piugrande">DOMANDE FREQUENTI</a>
             <p><img src = "svg/clock-pieno.svg" alt = "orari di apertura">Lunedì - Sabato: 6:30 - 13:00 | 15:30 - 19:30</p>
-            <a href = "manutenzione.html"><img src = "svg/aboutus.svg" alt = "chi siamo" class = "piugrande">Chi Siamo</a>
+            <a href = "chisiamo.html"><img src = "svg/aboutus.svg" alt = "chi siamo" class = "piugrande">Chi Siamo</a>
             <br>
         </div>
         <hr>
         <div>
             <i>© 2026 - ${new Date().getFullYear()} &nbsp;&nbsp; Tabaccheria Girasole - All Rights Reserved.</i>
             <div>
-                <a href = "https://www.instagram.com/tabaccheria_girasole"><img src = "svg/instagram.svg" alt = "instagram" class = "piugrande"></a>
-                <a href = "https://www.facebook.com/tabaccheriagirasole"><img src = "svg/facebook.svg" alt = "facebook" class = "piugrande"></a>
+                <a href = "https://www.instagram.com/tabaccheria_girasole"><img src = "svg/instagram.svg" alt = "Instagram Tabaccheria Girasole" class = "piugrande"></a>
+                <a href = "https://www.facebook.com/tabaccheriagirasole"><img src = "svg/facebook.svg" alt = "Facebook Tabaccheria Girasole" class = "piugrande"></a>
             </div>
         </div>
     `;
@@ -58,10 +58,10 @@ function menu() {
     const div = document.createElement("div");
     div.className = "menu";
     div.innerHTML = `
-        <a href="manutenzione.html">SERVIZI</a>
-        <a href="manutenzione.html">DISTRIBUTORI</a>
-        <a href="manutenzione.html">CATALOGO</a>
-        <a href="manutenzione.html">CONTATTI</a>
+        <a href="servizi.html">SERVIZI</a>
+        <a href="distributori.html">DISTRIBUTORI</a>
+        <a href="catalogo.html">CATALOGO</a>
+        <a href="contatti.html">CONTATTI</a>
     `;
 
     document.body.insertBefore(div, document.body.firstElementChild);
