@@ -1,0 +1,72 @@
+main, main address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+
+main {
+    height: auto;
+    background-image: radial-gradient(circle at left top, #42c9ff, rgba(14, 68, 87, 0.7)), url("../svg/pittogramma.svg"), linear-gradient(black, black);
+    background-size: cover, 400%;
+    background-position: 30% 30%;
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4), 2px 0px 70px rgba(0, 0, 0, 0.7);
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: flex-start;
+}
+
+main address {
+    font-style: normal;
+}
+
+main h1, main h2, main p, main a, main ul, main li {
+    color: whitesmoke;
+    display: inline-flex;
+    text-align: left;
+}
+
+main p, main a, main ul {
+    margin: 0px 0px 0px 0px;
+    max-width: 35em;
+    text-align: justify;
+}
+
+main p, main a {
+    font-size: 1.2em;
+}
+
+
+main ul {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+main li {
+    display: block;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-left: 2em;
+}
+
+main li a {
+    font-size: inherit;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    row-gap: 0.5em;
+}
+
+
+@media screen and (max-width: 768px) { 
+
+    main li {
+        margin-left: 0;
+    }    
+}
