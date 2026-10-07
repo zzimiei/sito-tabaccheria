@@ -12,3 +12,9 @@ main img {
 main h1 {
     font-weight: 700;
 }
+
+@media screen and (max-width: 800px) {
+    main address a {
+        font-size: inherit;
+    }
+}
