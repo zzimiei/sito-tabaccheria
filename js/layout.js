@@ -58,7 +58,7 @@ function menu() {
     const div = document.createElement("div");
     div.className = "menu";
     div.innerHTML = `
-        <a href="index.html/#servizi">SERVIZI</a>
+        <a href="index.html#servizi">SERVIZI</a>
         <a href="distributori.html">DISTRIBUTORI</a>
         <a href="brands.html">BRANDS</a>
         <a href="contatti.html">CONTATTI</a>
