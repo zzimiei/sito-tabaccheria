@@ -18,4 +18,8 @@ function menu() {
     `;
 
     document.body.insertBefore(div, document.body.firstElementChild);
+
+    div.querySelector("a").addEventListener("click", function() {
+        div.remove();
+    });
 }
