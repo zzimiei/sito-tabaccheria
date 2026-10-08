@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/poppins/Poppins-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+main, main .wrapper, main .wrapper div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8em;
+}
+
+main {
+    min-height: 100vh;
+    height: auto;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(3, 49, 63, 0.7), rgba(3, 49, 63, 0.4)), url("../webp/foto/esterno.webp");
+    background-size: cover, 100%;
+    background-position: 0% -30vw;
+    background-attachment: fixed;
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.4), 2px 0px 70px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 13em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+main .wrapper {
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    background-color: rgb(4, 15, 20);
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.wrapper h1 {
+    background-color: rgb(28, 201, 253);
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 3.3em;
+    text-align: center;
+    text-shadow: none;
+    font-size: 2em;
+    color: rgb(17, 28, 34);
+}
+
+.wrapper2 {
+    position: relative;
+    top: -6em;
+    width: 30%;
+    min-width: 300px;
+    background-color: whitesmoke;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5), 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper2 > * {
+    color: rgb(22, 20, 8);
+    text-shadow: none;
+}
+
+
+.wrapper p, .wrapper details {
+    max-width: 35em;
+    font-size: 1.1em;
+}
+
+.wrapper details {
+    text-align: left;
+}
+
+.wrapper p {
+    margin-top: 0px;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.wrapper details {
+    margin: 0px 0px 0px 0px;
+}
+
+.wrapper2 details {
+    align-items: center;
+    background-color: rgb(238, 240, 240);
+    color: rgb(56, 64, 73);
+    border-radius: 0.5em;
+    padding: 0.5em 1em 0.5em 1em;
+    text-shadow: none;
+    transition: 0.1s ease-in-out;
+}
+
+.wrapper2 summary {
+    list-style: none;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: rgb(73, 76, 82);
+}
+
+.wrapper2 summary::-webkit-details-marker {
+    display: none;
+}
+
+.wrapper2 summary::before {
+    content: ">";
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em;
+    font-size: 1.5em;
+    line-height: 0;
+    color: rgb(99, 103, 109);
+    vertical-align: middle;
+    transition: 0.1s ease-in-out;
+}
+
+.wrapper2 details[open] > summary::before {
+    transform: rotate(-90deg);
+    translate: -5px -7px;
+}
+
+.wrapper2 h2 {
+    color: rgb(40, 52, 59);
+}
+
+.wrapper2 p {
+    color: rgb(56, 64, 73);
+    font-size: 1em;
+    line-height: 1.3em;
+    margin-bottom: 1em;
+}
+
+.wrapper2 li b {
+    font-weight: 600;
+    color: rgb(47, 54, 61);
+}
+
+.wrapper2 ol {
+    padding-right: 1em;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.wrapper ol p {
+    font-size: 0.9em;
+}
+
+
+.wrapper2 li {
+    display: list-item;
+    list-style-type: decimal;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-left: 1em;
+}
+
+
+@media screen and (max-width: 768px) { 
+
+    main {
+        background-image: linear-gradient(rgba(3, 49, 63, 0.4), rgba(3, 49, 63, 0.7)), url("../webp/foto/esterno verticale.webp");
+        background-position: -0% -50vw;
+        padding-top: 10em;
+    }
+
+    .wrapper2 {
+        padding: 1.5em;
+    }
+
+    main ol, main li {
+        margin-left: 0;
+        margin-top: 0.7em;
+        text-align: left;
+    }    
+}
