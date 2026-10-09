@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const header = document.createElement("header");
     header.innerHTML = `
-        <a href = "index.html"><img src = "svg/pittogramma + logotipo - orizzontale.svg" alt = "Index Tabaccheria Girasole"></a>
+        <a href = "https://www.tabaccheriagirasole.com"><img src = "svg/pittogramma + logotipo - orizzontale.svg" alt = "Index Tabaccheria Girasole"></a>
         <button onclick = "menu()"></button>
 		<nav>
             <a href = "https://www.tabaccheriagirasole.com#servizi">SERVIZI</a>
