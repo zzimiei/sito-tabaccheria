@@ -42,10 +42,10 @@ body > address a:hover img {
 
 main {
     position: relative;
-    background-image: linear-gradient(rgba(7, 93, 119, 0.4), rgb(4, 15, 20) 95%), url("../webp/foto/esterno.webp");
+    background-image: linear-gradient(rgba(13, 101, 128, 0.5), rgb(4, 20, 20) 95%), url("../webp/foto/esterno.webp");
     background-size: cover;
     background-position: center;
-    min-height: 85vh;
+    min-height: 80vh;
 }
 
 main > * {
@@ -192,7 +192,7 @@ main div a:nth-of-type(2):hover img {
 
 
 .background_sections {
-    background-image: linear-gradient(rgb(4, 15, 20), transparent 35%, rgba(24, 67, 88, 0.8)), radial-gradient(circle at left top, #56c9f7,#188ab8 10%, #0f62835b), url("../webp/foto/interno2.webp");
+    background-image: linear-gradient(rgb(4, 20, 20), transparent 35%, rgba(24, 67, 88, 0.8)), radial-gradient(circle at left top, #56c9f7,#188ab8 10%, #0f62835b), url("../webp/foto/interno2.webp");
     background-size: cover, 100%;
     background-position: 25% 30%;
     padding-top: 5em;
@@ -243,15 +243,15 @@ section span {
 }
 
 section span img {
-    width: 20%;
-    height: 20%;
+    width: 25%;
+    height: 25%;
     max-width: 100px;
     max-height: 100px;
     filter: drop-shadow(0px 3px 3px #0000009c) drop-shadow(0px 5px 10px #00000036);
 }
 
 section span img:last-of-type {
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 }
 
 section a {
@@ -315,9 +315,9 @@ section:last-of-type a {
 
     main p {
         line-height: 1.3em;
-        font-size: 1.1em;
-        margin-bottom: 0;
-        margin-top: 10%;
+        font-size: clamp(14px, 2vh, 18px);
+        margin-bottom: 1em;
+        margin-top: 2em;
     }
 
     main div {
@@ -336,7 +336,7 @@ section:last-of-type a {
     }
 
     .background_sections {
-        background-image: linear-gradient(rgb(4, 15, 20), transparent 35%, rgba(24, 67, 88, 0.8)), radial-gradient(circle at left top, #56c9f7,#1ca5db 10%, #0f62835b), url("../webp/foto/interno2 verticale.webp");
+        background-image: linear-gradient(rgb(4, 20, 20), transparent 35%, rgba(24, 67, 88, 0.8)), radial-gradient(circle at left top, #56c9f7,#1ca5db 10%, #0f62835b), url("../webp/foto/interno2 verticale.webp");
         background-size: cover, 100%;
         background-position: 35% 0%;
     }
@@ -356,14 +356,11 @@ section:last-of-type a {
     
     section p {
         font-size: 1.1em;
+        text-align: left;
     }
 
     section span {
         justify-content: center;
-    }
-
-    section:last-of-type p {
-        font-size: 1.2em;
     }
 
     section:last-of-type a {

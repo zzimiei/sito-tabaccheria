@@ -32,6 +32,7 @@ main p {
     background-image: linear-gradient(0deg, #b1b1b1, #c9c9c9);
     border-radius: 5px;
     padding: 10px 30px 20px 30px;
+    margin-bottom: 5em;
     width: 75%;
     max-width: 350px;
     height: 70vh;
@@ -149,16 +150,20 @@ main p {
 }
 
 .distributore .menu_distributori h2 {
-    margin-top: 1em;
+    margin-top: 8vh;
     margin-bottom: 1em;
     font-size: 1.2em;
+    line-height: 1em;
 }
 
 .distributore .menu_distributori h3 {
     font-size: 1em;
     margin-top: 1em;
     line-height: 1em;
+}
 
+.distributore .menu_distributori h2, .distributore .menu_distributori h3 {
+    font-size: clamp(10px, 8vw, 1.2em);
 }
 
 .distributore .menu_distributori button {
@@ -222,6 +227,14 @@ main p {
     100% {opacity: 0;}
 }
 
+.distributore div::-webkit-scrollbar {
+    display: none;
+}
+
+.distributore div img {
+    width: clamp(30px, 10vw, 48px);
+    background-color: whitesmoke;
+}
 
 .finger_scroll {
     position: absolute;
@@ -232,6 +245,7 @@ main p {
     z-index: 10;
     opacity: 0;
     animation: scrolling 2s ease-in-out;
+    background-color: transparent !important;
 }
 
 @keyframes scrolling {
@@ -247,14 +261,6 @@ main p {
     100% {translate: 0% -15%; opacity: 0;}
 }
 
-.distributore div::-webkit-scrollbar {
-    display: none;
-}
-
-.distributore div img {
-    width: 48px;
-    /*pointer-events: none;*/
-}
 .distributore .monitor .overlay_zoom {
     display: none;
     position: sticky;
@@ -300,6 +306,7 @@ main p {
     .distributore .menu_distributori div button {
         font-size: 1.5em;
     }
+
     main {
         background-image: linear-gradient(rgba(17, 119, 150, 0.4), rgba(3, 9, 12, 0.9)), url("../webp/foto/distributori verticale.webp");
     }
@@ -312,11 +319,8 @@ main p {
 
     main p {
         font-size: 0.8em;
-    }
-}
-
-@media screen and (max-height: 760px) {
-    .distributore .menu_distributori h2, .distributore .menu_distributori h3 {
-        font-size: 0.9em;
+        text-align: justify;
+        text-align-last: left;
+        width: 85%;
     }
 }
