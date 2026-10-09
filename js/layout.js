@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div>
             <i>© 2026 - ${new Date().getFullYear()} &nbsp;&nbsp; Tabaccheria Girasole - All Rights Reserved.</i>
             <div>
-                <a href = "https://www.instagram.com/tabaccheria_girasole"><img src = "svg/instagram.svg" alt = "Instagram Tabaccheria Girasole" class = "piugrande"></a>
+                <a href = "https://www.instagram.com/tabaccheriagirasole"><img src = "svg/instagram.svg" alt = "Instagram Tabaccheria Girasole" class = "piugrande"></a>
                 <a href = "https://www.facebook.com/tabaccheriagirasole"><img src = "svg/facebook.svg" alt = "Facebook Tabaccheria Girasole" class = "piugrande"></a>
             </div>
         </div>
