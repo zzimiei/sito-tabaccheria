@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <a href = "index.html"><img src = "svg/pittogramma + logotipo - orizzontale.svg" alt = "Index Tabaccheria Girasole"></a>
         <button onclick = "menu()"></button>
 		<nav>
-            <a href = "index.html#servizi">SERVIZI</a>
+            <a href = "https://www.tabaccheriagirasole.com#servizi">SERVIZI</a>
             <a href = "distributori.html">DISTRIBUTORI</a>
         	<a href = "brands.html">BRANDS</a>
             <a href = "contatti.html">CONTATTI</a>
@@ -58,7 +58,7 @@ function menu() {
     const div = document.createElement("div");
     div.className = "menu";
     div.innerHTML = `
-        <a href="index.html#servizi">SERVIZI</a>
+        <a href="https://www.tabaccheriagirasole.com#servizi">SERVIZI</a>
         <a href="distributori.html">DISTRIBUTORI</a>
         <a href="brands.html">BRANDS</a>
         <a href="contatti.html">CONTATTI</a>
