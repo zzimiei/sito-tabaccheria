@@ -20,34 +20,42 @@
         <link rel = "stylesheet" href = "css/index.css">
         <script type="application/ld+json">
             {
-              "@context": "https://schema.org",
-              "@type": "TobaccoStore",
-              "name": "Tabaccheria Girasole",
-              "url": "https://www.tabaccheriagirasole.com",
-              "telephone": "+39 0733 238262",
-              "email": "posta@tabaccheriagirasole.com",
-              "image": "https://www.tabaccheriagirasole.com/webp/foto/esterno.webp",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Piazzale Vittime del Terrorismo, 3",
-                "postalCode": "62100",
-                "addressLocality": "Macerata",
-                "addressCountry": "IT"
-              },
-              "openingHoursSpecification": [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-                  "opens": "06:30",
-                  "closes": "13:00"
+                "@context": "https://schema.org",
+                "@type": "Store",
+                "additionalType": "https://it.wikipedia.org/wiki/Tabaccheria",
+                "name": "Tabaccheria Girasole",
+                "url": "https://www.tabaccheriagirasole.com",
+                "telephone": "+390733238262",
+                "email": "posta@tabaccheriagirasole.com",
+                "image": "https://www.tabaccheriagirasole.com/webp/foto/esterno.webp",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Piazzale Vittime del Terrorismo, 3",
+                    "postalCode": "62100",
+                    "addressLocality": "Macerata",
+                    "addressCountry": "IT"
                 },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-                  "opens": "15:30",
-                  "closes": "19:30"
-                }
-              ]
+                "openingHoursSpecification": [
+                    {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                    "opens": "06:30",
+                    "closes": "13:00"
+                    },
+                    {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                    "opens": "15:30",
+                    "closes": "19:30"
+                    }
+                ],
+                "amenityFeature": [
+                    {
+                        "@type": "LocationFeatureSpecification",
+                        "name": "Distributori automatici attivi 24 ore su 24, 7 giorni su 7",
+                        "value": true
+                    }
+                ]
             }
         </script>
         <script src = "js/index_layout.js"></script>
@@ -64,14 +72,14 @@
             </nav>
         </header>
         <address>
-            <a href = "https://wa.me/+393464785294"><img src = "svg/whatsapp.svg" alt = "Contatto Whatsapp"></a>
+            <a href = "https://wa.me/393464785294"><img src = "svg/whatsapp.svg" alt = "Contatto Whatsapp"></a>
             <a href = "mailto:posta@tabaccheriagirasole.com"><img src = "svg/email-pieno.svg" alt = "Indirizzo Mail"></a>
         </address>
         <main>
             <img src = "svg/pittogramma.svg" alt = "tabaccheriagirasole_pittogramma">
             <h1>Tabaccheria Girasole</h1>
             <h2>di Savi Daniele</h2>
-            <h3><img src = "webp/pittogramma iqos.webp" alt = "IQOS Partner"><div>IQOS<span>PARTNER</span></div></h3>
+            <h3><img src = "webp/pittogramma iqos.webp" alt = "IQOS Partner"><span class = "iqos">IQOS<span class = "partner">PARTNER</span></span></h3>
             <p>Tabacchi, accessori per fumatori, dispositivi e liquidi da svapo, consegna e ritiro pacchi, marche da bollo e biglietti APM.</p>
             <div>
                 <a href = "brands.html">VAI AI BRANDS<img src = "svg/arrow - senza cerchio.svg" alt = "Brands"></a>
@@ -81,13 +89,16 @@
         <div class = "background_sections" id = "servizi">
             <section>
                 <h2>I NOSTRI SERVIZI</h2>
-                <p>Tabaccheria Girasole è un punto consegna e ritiro pacchi autorizzato PuntoPoste, Amazon Hub Counter, InPost Point, BRT FermoPoint e UPS Access Point. <a href = "pacchi.html">Clicca qui per maggiori info.</a></p>
+                <p>Tabaccheria Girasole è un punto consegna e ritiro pacchi autorizzato PuntoPoste, Amazon Hub Counter, InPost Point, BRT FermoPoint, UPS Access Point, GLS Point e TNT FedEx Point. <a href = "pacchi.html">Clicca qui per maggiori info.</a></p>
                 <span>
                     <img src = "webp/servizi/puntoposte.webp" alt = "puntoposte">
                     <img src = "webp/servizi/amazonhubcounter.webp" alt = "amazonhubcounter">
                     <img src = "webp/servizi/inpostpoint.webp" alt = "inpostpoint">
                     <img src = "webp/servizi/fermopointbrt.webp" alt = "fermopointbrt">
                     <img src = "webp/servizi/upsaccesspoint.webp" alt = "upsaccesspoint">
+                    <img src = "webp/servizi/gls point.webp" alt = "glspoint">
+                    <img src = "webp/servizi/tnt.webp" alt = "tntfedexpoint">
+                    <!--img src = "webp/servizi/prontopacco.webp" alt = "prontopacco"-->
                 </span>
                 <p>Tabaccheria Girasole offre stampa di marche da bollo, biglietti APM, ricariche telefoniche, pagamento del bollo auto e moto, ricariche Paysafe Card, OnShop, PostePay, codici acquisto e pagamenti PagoPA con LIS e Mooney, Prelievo Contante Intesa San Paolo con Mooney.</p>
                 <span>
@@ -116,7 +127,7 @@
             </section>
             <section>
                 <h2>I NOSTRI DISTRIBUTORI</h2>
-                <p>Tabaccheria Girasole mette a disposizione della clientela 4 distributori automatici attivi 24 ore su 24, 7 giorni su 7, con un assortimento tra i più ampi di Macerata e in continua espansione, per offrire sempre più scelta e comodità.</p><a href = "distributori.html">VAI AI DISTRIBUTORI<img src = "svg/arrow - senza cerchio.svg"></a>
+                <p>Tabaccheria Girasole mette a disposizione della clientela 4 distributori automatici attivi 24 ore su 24, 7 giorni su 7, con un assortimento tra i più ampi di Macerata e in continua espansione, per offrire sempre più scelta e comodità.</p><a href = "distributori.html">VAI AI DISTRIBUTORI<img src = "svg/arrow - senza cerchio.svg" alt = "distributori"></a>
             </section>
             <section>
                 <h2>METODI DI PAGAMENTO</h2>
@@ -130,13 +141,15 @@
             </section>
         </div>
         <footer>
-            <address>
-            <h3>CONTATTI</h3>
-            <a href = "tel:+390733238262"><img src = "svg/telephone-pieno.svg" alt = "Telefono">+39 0733 238262</a>
-            <a href = "https://wa.me/+393464785294"><img src = "svg/whatsapp.svg" alt = "Contatto Whatsapp">+39 346 478 5294</a>
-            <a href = "mailto:posta@tabaccheriagirasole.com"><img src = "svg/email-pieno.svg" alt = "Indirizzo Mail">posta@tabaccheriagirasole.com</a>
-            <a href = "https://maps.app.goo.gl/5ZdesHNdWVWNLTRT9"><img src = "svg/maps-pieno.svg" alt = "Indirizzo">Piazzale Vittime del Terrorismo, 3, Macerata</a>
-            </address>
+            <div>
+                <h3>CONTATTI</h3>
+                <address>
+                    <a href = "tel:+390733238262"><img src = "svg/telephone-pieno.svg" alt = "Telefono">+39 0733 238262</a>
+                    <a href = "https://wa.me/+393464785294"><img src = "svg/whatsapp.svg" alt = "Contatto Whatsapp">+39 346 478 5294</a>
+                    <a href = "mailto:posta@tabaccheriagirasole.com"><img src = "svg/email-pieno.svg" alt = "Indirizzo Mail">posta@tabaccheriagirasole.com</a>
+                    <a href = "https://maps.app.goo.gl/5ZdesHNdWVWNLTRT9"><img src = "svg/maps-pieno.svg" alt = "Indirizzo">Piazzale Vittime del Terrorismo, 3, Macerata</a>
+                </address>
+            </div>
             <div>
                 <h3>INFORMAZIONI UTILI</h3>
                 <a href = "faq.html"><img src = "svg/question-pieno.svg" alt = "domande frequenti" class = "piugrande">DOMANDE FREQUENTI</a>
