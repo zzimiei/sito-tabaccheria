@@ -114,7 +114,7 @@ main h3 img {
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
 }
 
-main h3 div {
+main h3 .iqos {
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -124,7 +124,7 @@ main h3 div {
     font-size: 0.8em;
 }
 
-main h3 span {
+main h3 .partner {
     text-align: right;
     font-family: 'Futura';
     font-size: 0.7em;
