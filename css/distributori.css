@@ -14,7 +14,11 @@ main h1 {
     margin-top: 1em;
 }
 
-main > h3:last-of-type {
+main > h2:last-of-type {
+    margin-top: 0.8em;
+}
+
+main > h2:last-of-type, main > h3:last-of-type {
     font-size: 1.7em;
     font-weight: 600;
 }
