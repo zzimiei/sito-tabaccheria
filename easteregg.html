@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+html {
+    overflow: hidden;
+    background-image: url("easteregg/easteregg balordo.jpg");
+}
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 100vw;
+            height: 100vh;
+
+            object-fit: contain;
+            border: none;
+            outline: none;
+
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <video loop muted autoplay playsinline>
+        <source src="easteregg/easteregg.mp4" type="video/mp4">
+    </video>
+
+</body>
+</html>
